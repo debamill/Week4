@@ -3,13 +3,14 @@ int ballSize = 40;
 int speed = 5;
 boolean movingUp = false;
 boolean movingLeft = false;
+floats
 void setup() {
   size(640, 240); 
  
   
 }
 void draw() {
-//  background(100);
+ background(100);
   fill(0);
   ellipse(x, y, ballSize, ballSize);
 
@@ -38,7 +39,8 @@ void draw() {
   if (x < 0) {
     movingLeft = false;
   }
-    
+  
+
 }
 
 
