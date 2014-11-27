@@ -14,6 +14,10 @@ class Ball {
     if (shouldBounceX()) {
       bounceX();
     }
+    if (shouldBounceY()) {
+      bounceY();
+    }
+    
     draw();
   }
   void move() {
