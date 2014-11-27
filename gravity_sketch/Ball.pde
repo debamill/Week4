@@ -2,12 +2,18 @@ class Ball {
   
   PVector location, velocity; 
   int ballSize = 40; 
-  float gravity = 0.1; 
+  float gravity = random(1); 
   float braking = 0.09;
-
+  float R = random(255);
+  float G = random(255);
+  float B = random(255);
+  
+  
   Ball(float inX, float inY, float inVelX, float inVelY) {
     location = new PVector(inX, inY); 
     velocity = new PVector(inVelX, inVelY);
+    
+
   }
 
   void update() {
@@ -59,8 +65,10 @@ class Ball {
   }
 
   void draw() {
-    fill(216, 7, 21);
+    fill(R, G, B);
     ellipse(location.x, location.y, ballSize, ballSize);
+    
+       
   }
 }
 
